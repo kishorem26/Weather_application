@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="icon" href="colud.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+
+    <h1 class="title">WEATHER APP</h1>
+
+    <div class="search-box">
+      <input type="text" id="city" placeholder="Enter city name">
+      <button onclick="getWeather()">Search</button>
+    </div>
+
+    <div id="loader" class="loader"></div>
+
+    <div class="weather-card" id="weatherCard">
+      <h2 id="cityName"></h2>
+      <p id="countryName"></p>
+      <div class="weather-main">
+        <img id="icon" src="" alt="">
+        <h1 class="temp"><span id="temp"></span>°C</h1>
+      </div>
+      <p id="description"></p>
+      <div class="divider"></div>
+      <div class="details">
+        <div class="detail-box">
+          <p class="label">Humidity</p>
+          <p class="value"><span id="humidity"></span></p>
+          <p class="unit">%</p>
+        </div>
+        <div class="detail-box">
+          <p class="label">Wind</p>
+          <p class="value"><span id="wind"></span></p>
+          <p class="unit">km/h</p>
+        </div>
+        <div class="detail-box">
+          <p class="label">Feels like</p>
+          <p class="value"><span id="feels-like"></span></p>
+          <p class="unit">°C</p>
+        </div>
+      </div>
+    </div>
+
+    <p id="error"></p>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
